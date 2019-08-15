@@ -1,0 +1,11 @@
+form > * {
+  display: block;
+}
+
+form label {
+  font-size: 0.8em;
+}
+
+form .validated:invalid {
+  outline: 1px solid red;
+}
