@@ -1,6 +1,7 @@
 import React from 'react'
 import { Form } from 'react-functional-forms'
-import { Checkbox, DatePicker, DateTimePicker, MenuItem, Radio, Select, Slider, Submit, Switch, TextField, TimePicker } from './form'
+import { Checkbox, MenuItem, Radio, Select, Slider, Submit, Switch, TextField } from 'react-material-functional-forms'
+import { DatePicker, DateTimePicker, TimePicker } from 'react-material-functional-forms-pickers'
 
 export default ({ onSubmit }) => (
   <Form onSubmit={onSubmit}>
