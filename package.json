@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react-functional-forms": "^0.0.1",
-    "react-material-functional-forms": "^0.0.1",
-    "react-material-functional-forms-pickers": "^0.0.1",
+    "@cordelta/react-forms": "^0.0.1",
+    "@cordelta/react-forms-material": "^0.0.1",
+    "@cordelta/react-forms-material-pickers": "^0.0.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.0"
