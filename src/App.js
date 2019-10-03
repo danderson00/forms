@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Material from './Material'
-import Simple from './Simple'
+// import Simple from './Simple'
 import './App.css'
 
 export default function App() {

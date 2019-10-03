@@ -1,37 +1,29 @@
 import React from 'react'
-import { Form } from 'react-functional-forms'
-import { Checkbox, MenuItem, Radio, Select, Slider, Submit, Switch, TextField } from 'react-material-functional-forms'
-import { DatePicker, DateTimePicker, TimePicker } from 'react-material-functional-forms-pickers'
+import { Form, Text, Checkbox, Radio, Select, Submit  } from '@cordelta/react-forms-material'
 
 export default ({ onSubmit }) => (
   <Form onSubmit={onSubmit}>
-    <TextField name="name" label="Name" required />
-    <TextField name="description" label="Description"/>
+    <Text name="name" label="Name" required />
+    <Text name="description" label="Description"/>
 
-    <Checkbox name="urgent" />
-    <Switch name="reallyUrgent" />
+    <Checkbox name="urgent" label="Urgent" />
 
-    <Radio name="rating" numeric value="1" checked />
-    <Radio name="rating" numeric value="2" />
-    <Radio name="rating" numeric value="3" />
+    <Radio name="rating" label="Rating" numeric required row values={[1, 2, 3, 4, 5]} />
 
-    <Select name="type" value="widget">
-      <MenuItem value="widget">Widget</MenuItem>
-      <MenuItem value="component">Component</MenuItem>
-    </Select>
+    <Select name="category" label="Category" values={['Components', 'Widgets']} required />
 
-    <DatePicker name="selectedDate" />
-    <TimePicker name="selectedDate" />
-    <DateTimePicker name="selectedDate" />
+    {/*<DatePicker name="selectedDate" />*/}
+    {/*<TimePicker name="selectedDate" />*/}
+    {/*<DateTimePicker name="selectedDate" />*/}
 
-    <Slider
-      name="value"
-      aria-labelledby="discrete-slider"
-      valueLabelDisplay="auto"
-      step={10}
-      min={10}
-      max={110}
-    />
+    {/*<Slider*/}
+    {/*  name="value"*/}
+    {/*  aria-labelledby="discrete-slider"*/}
+    {/*  valueLabelDisplay="auto"*/}
+    {/*  step={10}*/}
+    {/*  min={10}*/}
+    {/*  max={110}*/}
+    {/*/>*/}
     <Submit>Submit</Submit>
   </Form>
 )

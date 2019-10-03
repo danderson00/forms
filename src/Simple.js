@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Input, Textarea, Select, Submit, wrapInput } from 'react-functional-forms'
+import { Form, Input, Textarea, Select, Submit, wrapInput } from '@cordelta/react-forms'
 import './Simple.css'
 
 const InputField = wrapInput(({ label, className, ...inputProps }) =>
